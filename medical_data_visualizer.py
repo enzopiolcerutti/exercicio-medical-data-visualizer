@@ -39,16 +39,16 @@ def draw_cat_plot():
     # 7
     # Aqui estão sendo passados os parâmetros para o gráfico de barras que vai ser criado
     # A função catplot cria o gráfico de barras
-    fig_draw_cat = sns.catplot(x = 'variable', y = 'total', hue = 'value', col = 'cardio', data =df_cat , kind = 'bar')
+    fig = sns.catplot(x = 'variable', y = 'total', hue = 'value', col = 'cardio', data =df_cat , kind = 'bar')
 
     # 8
     # Nessa linha o gráfico é convertido para um objeto do matplotlib
     # A propriedade figure retorna a figura associada ao objeto seaborn
-    fig_draw_cat = fig_draw_cat.figure
+    fig = fig.figure
 
     # 9
-    fig_draw_cat.savefig('catplot.png')
-    return fig_draw_cat
+    fig.savefig('catplot.png')
+    return fig
 
 
 # 10

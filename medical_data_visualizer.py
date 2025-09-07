@@ -85,10 +85,10 @@ def draw_heat_map():
     # A função heatmap cria o gráfico de calor
     # O parâmetro data recebe a matriz de correlação
     # O parâmetro mask aplica a máscara para ocultar a metade superior da matriz
-    # O parâmetro annot=True exibe os valores de correlação em cada célula do gráfico
-    # O parâmetro fmt define o formato dos valores exibidos
-    # O parâmetro center define o valor central da escala de cores
-    # O parâmetro ax especifica o eixo onde o gráfico será desenhado
+    # O parâmetro annot=True mostra os valores de correlação em cada célula do gráfico
+    # O parâmetro fmt escolhe o formato dos valores exibidos
+    # O parâmetro center mostra o valor central da escala de cores
+    # O parâmetro ax mostra em qual eixo o gráfico será desenhado
     sns.heatmap(data = corr, mask = mask, annot = True, fmt = '.1f', center = 0, ax = ax)
 
     # 16
